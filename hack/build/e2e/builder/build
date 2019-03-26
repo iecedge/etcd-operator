@@ -10,7 +10,7 @@ if ! which docker > /dev/null; then
 	echo "docker needs to be installed"
 	exit 1
 fi
-
+IMAGE="gcr.io/coreos-k8s-scale-testing/etcd-operator-builder"
 : ${IMAGE:?"Need to set IMAGE, e.g. gcr.io/coreos-k8s-scale-testing/etcd-operator-builder"}
 
 echo "building container..."
